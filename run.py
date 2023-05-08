@@ -122,3 +122,26 @@ def end_game(saved, killed):
                 )
         except ValueError as err:
             print(f'{err}. Please answer Yes or No!')
+
+def main():
+   
+    saved = 0
+    killed = 0
+    while True:
+        tries = []
+        word, hidden_word = get_word()
+        print(HANGMAN[len(tries)])
+        print(' '.join(hidden_word))
+        while True:
+            guess, result = get_guess(word, hidden_word, tries)
+            if result == "fail":
+                result = collect_tries(tries, guess)
+                if result == "loose":
+                    print(HANGMAN[7] + "\n")
+                    print("Nope! " + f'{guess} is not in the word.')
+                    print("\n")
+                    print("The word is: " + (' '.join(word)) + "\n")
+                    print("No tries left...\n")
+                    print("...the man is now hanged!\n")
+                    killed += 1
+                    break
