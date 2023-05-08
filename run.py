@@ -145,3 +145,4 @@ def main():
                     print("...the man is now hanged!\n")
                     killed += 1
                     break
+main()                    
