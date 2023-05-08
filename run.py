@@ -74,3 +74,17 @@ def validate_guess(list_guess, guess, word, hidden_word, tries):
         return False
 
     return True
+    
+def add_letter(guess, word, hidden_word):
+    
+    
+    if list(guess) == word:
+        return "win"
+    else:
+        for i in range(len(word)):
+            if word[i] == guess:
+                hidden_word[i] = guess
+        if "_" in hidden_word:
+            return hidden_word
+        else:
+            return "win"    
