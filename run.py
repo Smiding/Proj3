@@ -74,7 +74,7 @@ def validate_guess(list_guess, guess, word, hidden_word, tries):
         return False
 
     return True
-    
+
 def add_letter(guess, word, hidden_word):
     
     
@@ -87,4 +87,38 @@ def add_letter(guess, word, hidden_word):
         if "_" in hidden_word:
             return hidden_word
         else:
-            return "win"    
+            return "win"   
+
+def collect_tries(tries, guess):
+   
+    tries.append(guess)
+    if len(tries) == 7:
+        return "loose"
+    else:
+        return tries
+
+
+def end_game(saved, killed):
+    
+   
+    if saved == 1:
+        print("You have managed to save 1 man")
+    else:
+        print(f'You have managed to save {saved} men')
+    if killed == 1:
+        print("and kill 1 man.")
+        print("\n")
+    else:
+        print(f'and kill {killed} men.')
+        print("\n")
+    while True:
+        play = input("Do you want to try again? (Yes or No): \n")
+        try:
+            if play.lower().startswith('y') or play.lower().startswith('n'):
+                break
+            else:
+                raise ValueError(
+                    f'{play} is not a valid input'
+                )
+        except ValueError as err:
+            print(f'{err}. Please answer Yes or No!')
