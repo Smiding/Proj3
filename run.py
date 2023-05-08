@@ -30,3 +30,47 @@ def get_word():
     blank = "_"
     hidden_word = [blank]*len(word)
     return word, hidden_word
+
+def get_guess(word, hidden_word, tries):
+    while True:
+        print("\n")
+        guess = input("Please make a guess: \n").upper()
+        list_guess = list(guess)
+        if validate_guess(list_guess, guess, word, hidden_word, tries):
+            break
+    if guess in word or list_guess == word:
+        return guess, "correct"
+    else:
+        return guess, "fail"
+
+
+def validate_guess(list_guess, guess, word, hidden_word, tries):
+    try:
+        if guess.isalpha():
+            if len(list_guess) != len(word):
+                if len(list_guess) != 1:
+                    raise ValueError(
+                        f'Your guess needs to contain 1 or {len(word)} letters'
+                    )
+            if len(list_guess) == 1:
+                if guess in hidden_word or guess in tries:
+                    raise ValueError(
+                        f'You already guessed for {guess}'
+                    )
+            if len(list_guess) == len(word):
+                if guess in tries:
+                    raise ValueError(
+                        f'You already guessed for {guess}'
+                    )
+        else:
+            raise ValueError(
+                "Your guess needs to contain letters only"
+            )
+    except ValueError as err:
+        print(HANGMAN[len(tries)])
+        print(' '.join(hidden_word) + "\n")
+        print(f"Invalid input: {err}. Please try again!" + "\n")
+        print("Failed guesses: "+(' '.join(tries)).upper())
+        return False
+
+    return True
