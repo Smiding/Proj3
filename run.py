@@ -92,7 +92,7 @@ def add_letter(guess, word, hidden_word):
 def collect_tries(tries, guess):
    
     tries.append(guess)
-    if len(tries) == 7:
+    if len(tries) == 6:
         return "loose"
     else:
         return tries
@@ -137,7 +137,7 @@ def main():
             if result == "fail":
                 result = collect_tries(tries, guess)
                 if result == "loose":
-                    print(HANGMAN[7] + "\n")
+                    print(HANGMAN[6] + "\n")
                     print("Nope! " + f'{guess} is not in the word.')
                     print("\n")
                     print("The word is: " + (' '.join(word)) + "\n")
@@ -160,5 +160,16 @@ def main():
                     print("Congratulations!\n")
                     print(f'{word} is the word' + "\n")
                     saved += 1
-                    break        
+                    break
+                elif result == hidden_word:
+                    hidden_word = result
+                    print(HANGMAN[len(tries)])
+                    print(' '.join(hidden_word) + "\n")
+                    print(f'Nice guess, {guess} is in the word.' + "\n")
+                    if len(tries) > 0:
+                        print("Failed guesses: "+(' '.join(tries)).upper())
+        if end_game(saved, killed):
+            break
+
+
 main()                    
