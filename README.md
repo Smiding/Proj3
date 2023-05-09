@@ -14,3 +14,38 @@ The player then proceeds to make guesses in order to uncover the word. Guesses c
 If the guessed letter is correct and exists in the word, it will be revealed, making it easier for the player to deduce the word.
 
 The game continues until either the player correctly guesses all the letters in the word, resulting in a win where the man is not hanged, or the player reaches 6 incorrect guesses, at which point the hangman image is fully displayed and the game is lost.
+
+## Features
+
+Display Images: The game will display hangman images representing the number of incorrect guesses made by the player.
+
+Display Underscores as "Hidden Word": The game will display underscores to represent the letters of the word that the player needs to guess.
+
+
+IMG 
+
+Accept User Input: The game will accept user input for choosing themes and making guesses.
+
+Choose Theme: The player can choose a theme from a list of available themes. Each theme has a set of words associated with it.
+
+Make Guesses: The player can guess letters to uncover the hidden word. The game will provide feedback on whether the guess is correct or incorrect.
+
+Play Again: After a game ends, the player can choose to play again. The game will reset and start a new round.
+
+Maintain Scores: The game will maintain scores to keep track of the player's wins and losses.
+
+
+IMG 
+
+Random Word Generation: The game will generate a random word from the chosen theme for each round.
+
+Maintain Tries: The game will keep track of the number of tries the player has made.
+
+Maintain Correct Guesses: The game will keep track of the correct guesses made by the player and update the display accordingly.
+
+
+IMG
+
+Input Validation and Error Checking: The game will validate user input to ensure it meets certain criteria. It will check for duplicate guesses, disallowed symbols, and words that are not the same length as the hidden word.
+
+Play Again Input Restrictions: When asked to play again, the player can only respond with words that start with 'y' or 'n'.
