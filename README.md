@@ -1,32 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HANGMAN
+Hangman is a Python terminal game that can be played on the Code Institute mock terminal hosted on Heroku.
 
-Welcome,
+The objective of the game is to guess a hidden word. A hangman figure will be gradually built with each incorrect guess. Your task is to uncover the word before the hangman is completely formed. Good luck!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+## How to play
+The game "Hangman" is a Python terminal game inspired by the classic game called Hangman.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+At the beginning of the game, the player selects a theme for the hidden word they will be guessing.
 
-## Creating the Heroku app
+The player then proceeds to make guesses in order to uncover the word. Guesses can be made for either the full word or individual letters. If the guessed letter or word is not present in the hidden word, a symbol representing a part of the hanged man will be displayed.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+If the guessed letter is correct and exists in the word, it will be revealed, making it easier for the player to deduce the word.
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+The game continues until either the player correctly guesses all the letters in the word, resulting in a win where the man is not hanged, or the player reaches 6 incorrect guesses, at which point the hangman image is fully displayed and the game is lost.
