@@ -145,4 +145,20 @@ def main():
                     print("...the man is now hanged!\n")
                     killed += 1
                     break
+                elif result == tries:
+                    tries = result
+                    print(HANGMAN[len(tries)])
+                    print(' '.join(hidden_word) + "\n")
+                    print("Nope! " + f'{guess} is not in the word.' + "\n")
+                    print("Failed guesses: "+(' '.join(tries)).upper())
+            elif result == "correct":
+                result = add_letter(guess, word, hidden_word)
+                if result == "win":
+                    print(' '.join(word) + "\n")
+                    word = ''.join(word)
+                    print("Nice guess!")
+                    print("Congratulations!\n")
+                    print(f'{word} is the word' + "\n")
+                    saved += 1
+                    break        
 main()                    
