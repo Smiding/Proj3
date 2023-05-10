@@ -49,3 +49,11 @@ IMG
 Input Validation and Error Checking: The game will validate user input to ensure it meets certain criteria. It will check for duplicate guesses, disallowed symbols, and words that are not the same length as the hidden word.
 
 Play Again Input Restrictions: When asked to play again, the player can only respond with words that start with 'y' or 'n'.
+
+
+## Testing
+I have manually tested this project by doing this:
+
+Passing the code through the PEP8 linter.
+Testing in gitpod terminal and Code Institute Heroku terminal.
+Let different users on different screens test the game on Code Institute Heroku terminal.
