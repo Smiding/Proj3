@@ -84,7 +84,7 @@ Code Institute for the deployment terminal.
 
 Inspiration:
 - [Youtube tutorial.] https://www.youtube.com/watch?v=m4nEnsavl6w
-- [This code.] [Youtube turtorial.]
+- [This code.] [https://inventwithpython.com/invent4thed/chapter8.html.]
 
 Help:
 Jessica Rydberg
