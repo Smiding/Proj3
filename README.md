@@ -52,8 +52,40 @@ Play Again Input Restrictions: When asked to play again, the player can only res
 
 
 ## Testing
-I have manually tested this project by doing this:
+- I have manually tested this project by doing this:
 
-Passing the code through the PEP8 linter.
-Testing in gitpod terminal and Code Institute Heroku terminal.
-Let different users on different screens test the game on Code Institute Heroku terminal.
+- Passing the code through the PEP8 linter.
+- Testing in gitpod terminal and Code Institute Heroku terminal.
+- Let different users on different screens test the game on Code Institute Heroku terminal.
+
+## Validator testing
+- No errors were found when passing through PEP8 Validator
+
+## Deployment
+- This project was deployed using Code Institutes mock terminal for Heroku.
+
+- Deployment at regular intervals:
+  - I used command git add filename to add the various files into it.
+  - Then i committed to local repo with command git commit -m "useful string info".
+  - Then finally uploaded it to my GitHub repo with git push.
+- Final deployment in Heroku:
+  - Fork github repository.
+  - Create new Heroku app.
+  - Set the buildbacks to Python and NodeJS in that order.
+  - Link the Heroku app to the repository.
+  - Enable automatic deployment.
+  - Click on Deploy.
+
+  Deployment
+This project was deployed using Code Institutes mock terminal for Heroku.
+
+## Credits
+Code Institute for the deployment terminal.
+
+Inspiration:
+[Youtube tutorial.] https://www.youtube.com/watch?v=m4nEnsavl6w
+[This code.] [Youtube turtorial.]
+
+Help:
+Jessica Rydberg
+
