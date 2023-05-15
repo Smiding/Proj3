@@ -3,6 +3,8 @@ Hangman is a Python terminal game that can be played on the Code Institute mock 
 
 The objective of the game is to guess a hidden word. A hangman figure will be gradually built with each incorrect guess. Your task is to uncover the word before the hangman is completely formed. Good luck!
 
+[Live version of my project](https://hangman-by-smiding.herokuapp.com/)
+
 
 ## How to play
 The game "Hangman" is a Python terminal game inspired by the classic game called Hangman.
