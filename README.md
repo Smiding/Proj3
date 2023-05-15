@@ -83,8 +83,8 @@ This project was deployed using Code Institutes mock terminal for Heroku.
 Code Institute for the deployment terminal.
 
 Inspiration:
-[Youtube tutorial.] https://www.youtube.com/watch?v=m4nEnsavl6w
-[This code.] [Youtube turtorial.]
+- [Youtube tutorial.] https://www.youtube.com/watch?v=m4nEnsavl6w
+- [This code.] [Youtube turtorial.]
 
 Help:
 Jessica Rydberg
