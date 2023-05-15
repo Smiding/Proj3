@@ -22,7 +22,7 @@ Display Images: The game will display hangman images representing the number of 
 Display Underscores as "Hidden Word": The game will display underscores to represent the letters of the word that the player needs to guess.
 
 
-IMG 
+![image of start of game](/assets/images/Start.png)
 
 Accept User Input: The game will accept user input for choosing themes and making guesses.
 
@@ -35,7 +35,7 @@ Play Again: After a game ends, the player can choose to play again. The game wil
 Maintain Scores: The game will maintain scores to keep track of the player's wins and losses.
 
 
-IMG 
+ [image of winnig game](/assets/images/win.png)
 
 Random Word Generation: The game will generate a random word from the chosen theme for each round.
 
@@ -44,7 +44,7 @@ Maintain Tries: The game will keep track of the number of tries the player has m
 Maintain Correct Guesses: The game will keep track of the correct guesses made by the player and update the display accordingly.
 
 
-IMG
+[image of invalid input](/assets/images/invalid.png)
 
 Input Validation and Error Checking: The game will validate user input to ensure it meets certain criteria. It will check for duplicate guesses, disallowed symbols, and words that are not the same length as the hidden word.
 
